@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IIMT UNIVERSITY MEERUT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="container py-5">
+    <h1 class="text-center text-primary mb-3">IIMT UNIVERSITY MEERUT</h1>
+    <p class="lead text-center">Empowering students through innovation and excellence.</p>
+
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h3>Overview</h3>
+        <p>IIMT UNIVERSITY MEERUT offers high-quality education, innovation-driven research, and industry partnerships for better employability.</p>
+
+        <h3>Courses Offered</h3>
+        <ul>
+          <li>B.Tech</li>
+          <li>MBA</li>
+          <li>B.Sc</li>
+          <li>BA</li>
+        </ul>
+
+        <h3>Facilities</h3>
+        <ul>
+          <li>Library</li>
+          <li>Hostel</li>
+          <li>Wi-Fi Campus</li>
+          <li>Modern Labs</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Placements</h3>
+        <p><strong>Average Package:</strong> ₹6 LPA</p>
+        <p><strong>Top Recruiters:</strong> Infosys, Wipro, TCS, Tech Mahindra</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-primary" id="checkFeesBtn">Check Course-wise Fees</button>
+      <a href="#" class="btn btn-secondary">Download Brochure</a>
+      <button class="btn btn-success" onclick="document.getElementById('leadForm').scrollIntoView()">Apply Now</button>
+    </div>
+
+    <!-- Lead Form -->
+    <div class="card mt-5 p-4 shadow-sm">
+      <h4 class="text-center mb-3">Apply Now</h4>
+      <form id="leadForm">
+        <div class="row g-3">
+          <div class="col-md-6"><input type="text" name="fullName" placeholder="Full Name" class="form-control" required /></div>
+          <div class="col-md-6"><input type="email" name="email" placeholder="Email" class="form-control" required /></div>
+          <div class="col-md-6"><input type="tel" name="phone" placeholder="Phone (10-digit)" pattern="[0-9]{10}" class="form-control" required /></div>
+          <div class="col-md-6"><input type="text" name="state" placeholder="State" class="form-control" required /></div>
+          <div class="col-md-6"><input type="text" name="course" placeholder="Course Interested" class="form-control" required /></div>
+          <div class="col-md-6"><input type="text" name="intakeYear" placeholder="Intake Year" class="form-control" required /></div>
+          <div class="col-12">
+            <input type="checkbox" required /> I consent to be contacted for admission updates.
+          </div>
+          <div class="col-12 text-center mt-3">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="feesModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Course-wise Fees</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="feesContainer">Loading...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const UNIVERSITY_ID = 1;
+    const PIPEDREAM_URL = "https://YOUR-PIPEDREAM-URL"; // Replace this
+  </script>
+</body>
+</html>

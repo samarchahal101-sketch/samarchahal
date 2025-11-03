@@ -1,0 +1,30 @@
+body {
+  background-color: #a1cdec;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h3 {
+  color: #960218;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.modal-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.modal-body li {
+  padding: 4px 0;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: #ffc107 !important;
+}
